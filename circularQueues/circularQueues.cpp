@@ -51,4 +51,15 @@ void insert() {
 			front = front + 1;
 		}
 	}
+
+	void display() {
+		int front_position = front;
+		int rear_position = rear;
+
+		if (front == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
+		cout << "\nElement in the queue are: \n";
+	}
 };
