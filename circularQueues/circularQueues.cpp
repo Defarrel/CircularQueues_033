@@ -69,6 +69,12 @@ void insert() {
 			}
 			cout << endl;
 		}
+		else {
+			while (front_position <= max - 1) {
+				cout << queue_array[front_position] << "     ";
+				front_position++;
+			} 
 		
+		}
 	}
 };
