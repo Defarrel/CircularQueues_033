@@ -33,4 +33,9 @@ void insert() {
 		}
 		queue_array[rear] = num;	
 	}
+
+	void remove() {
+		
+	
+	}
 };
