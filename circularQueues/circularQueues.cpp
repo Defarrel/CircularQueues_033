@@ -31,6 +31,6 @@ void insert() {
 		else
 			rear = rear + 1;
 		}
-		
+		queue_array[rear] = num;	
 	}
 };
