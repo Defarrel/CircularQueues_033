@@ -11,20 +11,26 @@ public:
 		rear = -1;
 	}
 
-	void insert() {
-		int num;
-		cout << "Enter a number: ";
-		cin >> num;
-		cout << endl;
+void insert() {
+	int num;
+	cout << "Enter a number: ";
+	cin >> num;
+	cout << endl;
 
-		if ((front == 0 && rear == max-1) || (front == rear + 1)) {
-			cout << "\nQueue overflow\n";
-			return;
-		}
-		if (front == -1) {
-			front = 0;
+	if ((front == 0 && rear == max-1) || (front == rear + 1)) {
+		cout << "\nQueue overflow\n";
+		return;
+	}
+	if (front == -1) {
+		front = 0;
+		rear = 0;
+	}
+	else {
+		if (rear == max - 1) 
 			rear = 0;
+		else
+			rear = rear + 1;
 		}
-	
+		
 	}
 };
