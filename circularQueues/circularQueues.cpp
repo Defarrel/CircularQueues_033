@@ -35,7 +35,11 @@ void insert() {
 	}
 
 	void remove() {
-		
+		if (front == -1) {
+			cout << "\nQueue underflow\n";
+			return;
+		}
+		cout << "\nThe element deleted from the queue is: " << queue_array[front] << "\n";
 	
 	}
 };
